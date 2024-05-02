@@ -1,10 +1,10 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
-import UserLogin from '@/views/UserLogin.vue'
+import SignIn from '@/views/SignIn.vue'
 import UserDashboard from '@/views/UserDashboard.vue'
 import ManagerDashboard from '@/views/ManagerDashboard.vue'
 import AdminDashboard from '@/views/AdminDashboard.vue'
-import UserSignUp from '@/views/UserSignUp.vue'
+import SignUp from '@/views/SignUp.vue'
 
 const routes = [
   {
@@ -18,14 +18,14 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
   {
-    path: '/login',
-    name: 'login',
-    component: UserLogin
+    path: '/signIn',
+    name: 'signIn',
+    component: SignIn
   },
   {
     path: '/signup',
-    name: 'signup',
-    component: UserSignUp
+    name: 'signUp',
+    component: SignUp
   },
   {
     path: '/dashboard/user',
